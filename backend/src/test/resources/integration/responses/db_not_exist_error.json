@@ -1,0 +1,5 @@
+{
+  "statusCode": 500,
+  "message": "could not prepare statement; SQL [SELECT c.color AS cat_color, COUNT(c.color) AS count FROM cats c GROUP BY c.color]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement",
+  "description": "uri=/cat-info/v1/cats-statistic/cat-colors"
+}

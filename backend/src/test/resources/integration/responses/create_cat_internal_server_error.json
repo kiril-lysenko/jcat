@@ -1,0 +1,5 @@
+{
+  "statusCode": 500,
+  "message": "JSON parse error: Cannot deserialize value of type `com.self.education.catinfo.domain.Colors` from String \"Yellow\": not one of the values accepted for Enum class: [Red & White, Red, Fawn, Red & White & Black, Black & Red, White, Blue, Black & White, Black, Cream]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.self.education.catinfo.domain.Colors` from String \"Yellow\": not one of the values accepted for Enum class: [Red & White, Red, Fawn, Red & White & Black, Black & Red, White, Blue, Black & White, Black, Cream]\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 3, column: 12] (through reference chain: com.self.education.catinfo.api.CatRequest[\"color\"])",
+  "description": "uri=/cat-info/v1/cat"
+}

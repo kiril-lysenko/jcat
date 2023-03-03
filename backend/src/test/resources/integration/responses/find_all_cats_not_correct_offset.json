@@ -1,0 +1,5 @@
+{
+  "statusCode": 400,
+  "message": "Offset index must not be less than zero!",
+  "description": "uri=/cat-info/v1/cats"
+}

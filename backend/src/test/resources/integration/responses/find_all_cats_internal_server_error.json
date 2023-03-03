@@ -1,0 +1,5 @@
+{
+  "statusCode": 500,
+  "message": "Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: \"99098889900\"",
+  "description": "uri=/cat-info/v1/cats"
+}

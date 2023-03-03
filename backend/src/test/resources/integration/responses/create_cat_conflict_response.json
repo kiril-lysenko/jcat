@@ -1,0 +1,5 @@
+{
+  "statusCode": 409,
+  "message": "could not execute statement",
+  "description": "uri=/cat-info/v1/cat"
+}

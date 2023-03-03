@@ -1,0 +1,8 @@
+{
+  "tailLengthMean" : 19.5,
+  "tailLengthMedian" : 19.5,
+  "tailLengthMode" : [ 18, 21 ],
+  "whiskersLengthMean" : 17.0,
+  "whiskersLengthMedian" : 17.0,
+  "whiskersLengthMode" : [ 22, 12 ]
+}

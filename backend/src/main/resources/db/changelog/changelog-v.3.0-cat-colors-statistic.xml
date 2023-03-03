@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet id="create_cat_colors_info_table" author="kkarpekina">
+        <createTable tableName="cat_colors_info">
+            <column name="cat_color" type="colors">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="count" type="int"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="cat_colors_info"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>

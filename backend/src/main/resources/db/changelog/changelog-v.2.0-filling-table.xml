@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet id="filling_table" author="kkarpekina">
+        <insert tableName="cats">
+            <column name="name" value="Nemo"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Nemo'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Carla"/>
+            <column name="color" value="BLACK_RED"/>
+            <column name="tail_length" value="19"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Carla'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="John"/>
+            <column name="color" value="BLUE"/>
+            <column name="tail_length" value="15"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='John'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Lucky"/>
+            <column name="color" value="CREAM"/>
+            <column name="tail_length" value="21"/>
+            <column name="whiskers_length" value="10"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Lucky'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Norman"/>
+            <column name="color" value="FAWN"/>
+            <column name="tail_length" value="11"/>
+            <column name="whiskers_length" value="8"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Norman'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Bridge"/>
+            <column name="color" value="BLUE"/>
+            <column name="tail_length" value="27"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Bridge'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Tihon"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="15"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Tihon'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Marfa"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="13"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Marfa'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Circle"/>
+            <column name="color" value="BLACK_RED"/>
+            <column name="tail_length" value="15"/>
+            <column name="whiskers_length" value="7"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Circle'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Cassandra"/>
+            <column name="color" value="CREAM"/>
+            <column name="tail_length" value="13"/>
+            <column name="whiskers_length" value="5"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Cassandra'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Xander"/>
+            <column name="color" value="BLACK_RED"/>
+            <column name="tail_length" value="18"/>
+            <column name="whiskers_length" value="9"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Xander'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Tom"/>
+            <column name="color" value="RED"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Rom'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Jerry"/>
+            <column name="color" value="FAWN"/>
+            <column name="tail_length" value="20"/>
+            <column name="whiskers_length" value="14"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Jerry'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Honey"/>
+            <column name="color" value="CREAM"/>
+            <column name="tail_length" value="21"/>
+            <column name="whiskers_length" value="8"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Honey'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Merge"/>
+            <column name="color" value="BLUE"/>
+            <column name="tail_length" value="25"/>
+            <column name="whiskers_length" value="14"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Merge'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Lee"/>
+            <column name="color" value="BLUE"/>
+            <column name="tail_length" value="24"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Lee'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Rock"/>
+            <column name="color" value="CREAM"/>
+            <column name="tail_length" value="21"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Rock'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Robert"/>
+            <column name="color" value="BLACK_RED"/>
+            <column name="tail_length" value="18"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Robert'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Persik"/>
+            <column name="color" value="FAWN"/>
+            <column name="tail_length" value="12"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Persik'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="London"/>
+            <column name="color" value="BLACK_RED"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="5"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='London'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Jack"/>
+            <column name="color" value="WHITE"/>
+            <column name="tail_length" value="14"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Jack'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Heroku"/>
+            <column name="color" value="BLACK_RED"/>
+            <column name="tail_length" value="12"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Heroku'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Hikari"/>
+            <column name="color" value="CREAM"/>
+            <column name="tail_length" value="19"/>
+            <column name="whiskers_length" value="7"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Hikari'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Boris"/>
+            <column name="color" value="BLUE"/>
+            <column name="tail_length" value="16"/>
+            <column name="whiskers_length" value="9"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Boris'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Simon"/>
+            <column name="color" value="FAWN"/>
+            <column name="tail_length" value="28"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Simon'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Max"/>
+            <column name="color" value="CREAM"/>
+            <column name="tail_length" value="24"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Max'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Ula"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="16"/>
+            <column name="whiskers_length" value="14"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Ula'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Sam"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="15"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Sam'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Snow"/>
+            <column name="color" value="WHITE"/>
+            <column name="tail_length" value="19"/>
+            <column name="whiskers_length" value="14"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Snow'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Chlo"/>
+            <column name="color" value="BLACK"/>
+            <column name="tail_length" value="14"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Chlo'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Yasha"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="18"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Yasha'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Tara"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Tara'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Flora"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="12"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Flora'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Shurik"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Shurik'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Cesar"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="18"/>
+            <column name="whiskers_length" value="14"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Cesar'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Odett"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Odett'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Foma"/>
+            <column name="color" value="BLACK"/>
+            <column name="tail_length" value="15"/>
+            <column name="whiskers_length" value="18"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Foma'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Lesya"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="12"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Lesya'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Tayson"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="18"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Tayson'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Ost"/>
+            <column name="color" value="WHITE"/>
+            <column name="tail_length" value="14"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Ost'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Kelly"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="26"/>
+            <column name="whiskers_length" value="1"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Kelly'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Nord"/>
+            <column name="color" value="RED_WHITE_BLACK"/>
+            <column name="tail_length" value="19"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Nord'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Neo"/>
+            <column name="color" value="RED"/>
+            <column name="tail_length" value="11"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Neo'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Clod"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="12"/>
+            <column name="whiskers_length" value="15"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Clod'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Vika"/>
+            <column name="color" value="BLACK"/>
+            <column name="tail_length" value="14"/>
+            <column name="whiskers_length" value="10"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Vika'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Gass"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="15"/>
+            <column name="whiskers_length" value="13"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Gass'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Dina"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="17"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Dina'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Hustav"/>
+            <column name="color" value="RED_WHITE"/>
+            <column name="tail_length" value="12"/>
+            <column name="whiskers_length" value="12"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Hustav'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Amur"/>
+            <column name="color" value="BLACK_WHITE"/>
+            <column name="tail_length" value="20"/>
+            <column name="whiskers_length" value="11"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Amur'</where>
+            </delete>
+        </rollback>
+        <insert tableName="cats">
+            <column name="name" value="Asya"/>
+            <column name="color" value="BLACK"/>
+            <column name="tail_length" value="10"/>
+            <column name="whiskers_length" value="10"/>
+        </insert>
+        <rollback>
+            <delete tableName="cats">
+                <where>name='Asya'</where>
+            </delete>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>

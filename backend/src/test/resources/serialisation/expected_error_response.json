@@ -1,0 +1,5 @@
+{
+  "statusCode" : 409,
+  "message" : "some error message",
+  "description" : "Indicates a request conflict with current state of the target resource"
+}

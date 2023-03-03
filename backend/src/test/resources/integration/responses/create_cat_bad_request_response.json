@@ -1,0 +1,5 @@
+{
+  "statusCode": 400,
+  "message": "Cat name can't blank, Color can't be null, Tail length must be equal or greater than 0, Whiskers length must be equal or greater than 0",
+  "description": "uri=/cat-info/v1/cat"
+}

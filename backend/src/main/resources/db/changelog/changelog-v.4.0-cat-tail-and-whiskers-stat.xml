@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+
+    <changeSet author="kkarpekina" id="create-cats-stat-table">
+        <createTable tableName="cats_stat">
+            <column name="lock" type="boolean" defaultValueBoolean="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="tail_length_mean" type="float"/>
+            <column name="tail_length_median" type="float"/>
+            <column name="tail_length_mode" type="int[]"/>
+            <column name="whiskers_length_mean" type="float"/>
+            <column name="whiskers_length_median" type="float"/>
+            <column name="whiskers_length_mode" type="int[]"/>
+        </createTable>
+        <rollback>
+            <dropTable tableName="cats_stat"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>

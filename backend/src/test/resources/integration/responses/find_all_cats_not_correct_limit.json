@@ -1,0 +1,5 @@
+{
+  "statusCode": 400,
+  "message": "Limit must not be less than one!",
+  "description": "uri=/cat-info/v1/cats"
+}

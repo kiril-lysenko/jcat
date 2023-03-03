@@ -1,0 +1,35 @@
+{
+  "content": [
+    {
+      "name": "Orange",
+      "color": "Red",
+      "tailLength": 18,
+      "whiskersLength": 12
+    }
+  ],
+  "pageable": {
+    "offset": 1,
+    "sort": {
+      "empty": false,
+      "sorted": true,
+      "unsorted": false
+    },
+    "pageSize": 1,
+    "pageNumber": 1,
+    "unpaged": false,
+    "paged": true
+  },
+  "last": false,
+  "totalPages": 5,
+  "totalElements": 5,
+  "size": 1,
+  "number": 1,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "first": false,
+  "numberOfElements": 1,
+  "empty": false
+}
