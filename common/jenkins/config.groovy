@@ -1,4 +1,4 @@
 [
     runAllLocations: ['common/', 'Jenkinsfile'],
-    servicesFolder: 'services'
+    servicesFolder: 'frontend'
 ]
