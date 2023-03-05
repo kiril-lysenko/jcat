@@ -15,7 +15,7 @@ if ! [ -x "$NODE_EXE" ]; then
   NODE_EXE=node
 fi
 
-# this path is passed to node.exe, so it needs to match whatever
+# 1this path is passed to node.exe, so it needs to match whatever
 # kind of paths Node.js thinks it's using, typically win32 paths.
 CLI_BASEDIR="$("$NODE_EXE" -p 'require("path").dirname(process.execPath)')"
 NPM_CLI_JS="$CLI_BASEDIR/node_modules/npm/bin/npm-cli.js"
