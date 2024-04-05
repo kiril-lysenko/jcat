@@ -69,9 +69,6 @@ Local:
 + http://localhost:8080/
 + http://localhost:8080/swagger-ui/index.html
 
-## Contact
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
