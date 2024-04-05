@@ -1,10 +1,9 @@
-!-- ABOUT THE PROJECT -->
+
 
 ## About The Cat Info Project
 
-![Main Page Screen Shot][project-screenshot]
 
-This project contain solution on testing task from  https://github.com/wgnet/wg_forge_backend with the addition of
+This project contain solution on testing task from  WG with the addition of
 the developer's imagination.
 
 Project contains:
